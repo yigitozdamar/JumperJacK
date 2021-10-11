@@ -27,7 +27,13 @@ public class SpawnManagerScript : MonoBehaviour
 
     void SpawnRandomBrics()
     {
-       
+    /*
+       for(int i = 0; i < 5; i++)
+       {
+       int y = i * 3 + 1;
+        Instantiate(bricksPrefab, new Vector3(Random.Range(-screenBounds.x + 0.3f, screenBounds.x - 0.3f),playerPrefab.transform.position.y +y), bricksPrefab.transform.rotation);
+       }
+      */ 
         Instantiate(bricksPrefab, new Vector3(Random.Range(-screenBounds.x + 0.3f, screenBounds.x - 0.3f),playerPrefab.transform.position.y +1,0), bricksPrefab.transform.rotation);
         Instantiate(bricksPrefab, new Vector3(Random.Range(-screenBounds.x + 0.3f, screenBounds.x - 0.3f),playerPrefab.transform.position.y +4,0), bricksPrefab.transform.rotation);
         Instantiate(bricksPrefab, new Vector3(Random.Range(-screenBounds.x + 0.3f, screenBounds.x - 0.3f),playerPrefab.transform.position.y +7,0), bricksPrefab.transform.rotation);
